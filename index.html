@@ -7,6 +7,7 @@
     <style>
         body{
             background-color: antiquewhite;
+            text-align: center;
         }
         h1{
             color: red;
@@ -27,14 +28,32 @@
             color: bisque;
         }
         p{
-            color: rgb(255, 0, 204);
+            color: rgb(255, 0, 191);
             font-size: 16pt;
             text-decoration: underline;
             font-weight: bold;
         }
+        table{
+            background-color: aqua;
+         
+        }
         p.dog{
             color: rgb(0, 255, 0);
             background-color: black;
+        }
+        div{
+            display: block;
+        }
+
+        div.dogpicture{
+            width: 100%;
+            background-color: aquamarine;
+        
+        }
+
+        div.tablazat{
+            width: 100%;
+            align-items: center;
         }
     </style>
 </head>
@@ -47,23 +66,32 @@
     <h6>Html alapok</h6>
     <p>szöveg</p>
     <p class="dog"> Kutya </p>
-
     
-    <table border="1">
-        <tr>
-            <th>Month</th>
-            <th>Savings</th>
-        </tr>
-        <tr>
-            <td>January</td>
-            <td>$100</td>
-        </tr>
-    </table>
+    <p>Click to feed the dog:</p>
+    
+    <button>Click me</button>
+    
+    <div class="tablazat">
+         <table border="1" align="center">
+            <tr>
+                <th></th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Food</td>
+                <td>$1</td>
+            </tr>
+        </table>
+    </div>
 
+    <div class="dogpicture">
+            <img src="dog.png"/>
+    </div>
 
-    <img src="dog.png"/>
-
+    <div>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/dTSgbztJ7Io?si=q_SD5IVTpel_LGL7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    </div>
 
 </body>
 </html>
