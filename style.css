@@ -21,6 +21,9 @@
 /* @import url('https://fonts.googleapis.com/css2?family=VALASZD+KI&display=swap'); */
 
 
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&display=swap');
+
+
 /* --- ALAP BEÁLLÍTÁSOK --- */
 * {
     margin: 0;
@@ -49,10 +52,44 @@ body {
 /* --- FEJLÉC --- */
 .fejlec {
     /* Háttér, padding, szöveg igazítás */
+    width: fit-content;
+    margin: 100px auto;
+    
+    
 }
 
 .fooldal-cim {
     /* Főcím stílusa */
+
+    /*border-left: 20px solid rgb(255, 136, 0);*/
+    text-align: center;
+    width: 5000px;
+    margin:100px auto;
+    font-size: 75px;
+    font-family: "Cascadia Mono", sans-serif;
+
+      overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid rgb(0, 0, 0); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  /*display: inline-block;     /* Csak a tartalom szélességét veszi fel */
+    width: fit-content;        /* Biztosítja, hogy ne legyen szélesebb a szövegnél */
+    margin: 0 auto;            /* Középre igazítás */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(238, 195, 6); }
 }
 
 .kiemeles {
@@ -61,6 +98,23 @@ body {
 
 .alcim {
     /* Alcím stílusa */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 
@@ -82,7 +136,6 @@ body {
 .kartya-cim {
     /* Kártya címek stílusa */
 }
-
 
 /* --- SZABÁLYOK LISTA --- */
 .szabaly-lista {
